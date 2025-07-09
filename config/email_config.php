@@ -39,10 +39,11 @@ class EmailConfig {
         $text .= '<p><span class="label">───────────────────────────────────</p>';
         $text .= '<p><span class="label">お問い合わせ内容</p>';
         $text .= '<p><span class="label">───────────────────────────────────</p>';
-        $text .= '<p><span class="label">貴社名:</span><span>'.($data['company_name'] ? $data['company_name'] : '未入力').'</span></p>';
         $text .= '<p><span class="label">お名前:</span><span>'.$data['full_name'].'</span></p>';
+        $text .= '<p><span class="label">会社名:</span><span>'.($data['company_name'] ? $data['company_name'] : '未入力').'</span></p>';
         $text .= '<p><span class="label">メールアドレス:</span><span>'.$data['email'].'</span></p>';
         $text .= '<p><span class="label">電話番号:</span><span>'.($data['phone'] ? $data['phone'] : '未入力').'</span></p>';
+        $text .= '<p><span class="label">お問い合わせカテゴリー:</span><span>'.($data['category'] ? $data['category'] : '未選択').'</span></p>';
         $text .= '<p><span class="label">お問い合わせ内容:</span></p>';
         $text .= '<p>'.$data['message'].'</p>';
         
@@ -51,7 +52,7 @@ class EmailConfig {
     
     public static function getConfirmationEmailTemplate($data) {
         $text = '<p>お世話になっております。<br>
-        '.self::COMPANY.'です。<br>
+        株式会社orivanceです。<br>
         このたびは、お問い合わせいただきまして誠にありがとうございます。<br>
         お問い合わせいただいた内容をもとに、<br>
         3営業日以内に担当よりあらためてご連絡を差し上げますので<br>
@@ -60,14 +61,13 @@ class EmailConfig {
         -----<br>
         ※こちらのメールは、自動送信メールです。<br>
         本メールに覚えのない場合は、お手数ですが、<br>
-        '.self::COMPANY.'までご連絡ください。<br>
+        株式会社orivanceまでご連絡ください。<br>
         <br>
         ──────────────<br>
-        '.self::COMPANY.'<br>
-        〒105-0004<br>
-        東京都港区新橋1-12-9 新橋プレイス6F・7F・8F<br>
-        TEL：03-4400-4113<br>
-        URL：<a href="https://cloud-innovation.co.jp/">https://cloud-innovation.co.jp/</a>
+        株式会社orivance<br>
+        〒472-0043<br>
+        愛知県知立市東栄3丁目48番地<br>
+        URL：<a href="https://orivance.co.jp/">https://orivance.co.jp/</a>
         </p>';
         
         return $text;

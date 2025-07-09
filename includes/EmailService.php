@@ -127,6 +127,7 @@ class EmailService {
             'full_name' => isset($data['full_name']) ? htmlspecialchars(trim($data['full_name'])) : '',
             'email' => isset($data['email']) ? htmlspecialchars(trim($data['email'])) : '',
             'phone' => isset($data['phone']) ? htmlspecialchars(trim($data['phone'])) : '',
+            'category' => isset($data['category']) ? htmlspecialchars(trim($data['category'])) : '',
             'message' => isset($data['message']) ? nl2br(htmlspecialchars(trim($data['message']))) : ''
         ];
     }
