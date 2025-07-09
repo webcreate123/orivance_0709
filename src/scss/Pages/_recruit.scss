@@ -1,0 +1,767 @@
+#recruit {
+    .other-inner {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    .recruit-fv {
+        background-color: #004178;
+        padding: 160px 0 130px;
+        .c-sub {
+            &_en {
+                span {
+                    color: white;
+                    &::before {
+                        background-color: white;
+                    }
+                    &::after {
+                        background-color: white;
+                    }
+                }
+            }
+            &_jp {
+                color: white;
+            }
+            &_bottom {
+                color: white;
+                font-size: 24px;
+                font-weight: bold;
+                font-family: "Zen Kaku Gothic New", sans-serif;
+                text-align: center;
+                margin-top: 130px;
+            }
+        }
+    }
+    .vision {
+        max-width: 1030px;
+        margin: 110px auto 0;
+        &_img {
+            img {
+                border-radius: 20px;
+            }
+        }
+        &_ttl {
+            font-size: 48px;
+            font-weight: bold;
+            color: #004178;
+            font-family: "Zen Kaku Gothic New", sans-serif;
+            text-align: center;
+            margin: 70px 0 40px;
+        }
+        &_txt {
+            font-size: 24px;
+            line-height: calc(35 / 24);
+            color: #004178;
+            text-align: center;
+        }
+    }
+    .faq {
+        margin-top: 120px;
+        &-ttl {
+            &_en {
+                font-size: 48px;
+                font-weight: bold;
+                letter-spacing: 0.1em;
+                color: #004178;
+                text-align: center;
+                font-family: "Zen Kaku Gothic New", sans-serif;
+            }
+            &_jp {
+                font-size: 24px;
+                font-weight: bold;
+                color: #004178;
+                letter-spacing: 0.1em;
+                text-align: center;
+                font-family: "Zen Kaku Gothic New", sans-serif;
+            }
+        }
+        &-item {
+            margin-top: 70px;
+            &_box {
+                cursor: pointer;
+            }
+            &_hover {
+                transition: all 0.5s;
+                position: relative;
+                padding-top: 80px;
+                display: none;
+            }
+            &_origin {
+                height: 100%;
+                transition: all 0.5s;
+            }
+            &_originG {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+            &_originEn {
+                font-size: 280px;
+                font-weight: 900;
+                color: white;
+                font-family: "Noto Sans JP", sans-serif;
+                line-height: 1;
+                margin-bottom: 80px;
+            }
+            &_originJp {
+                font-family: "Zen Kaku Gothic New", sans-serif;
+                font-size: 24px;
+                font-weight: bold;
+                letter-spacing: 0.12em;
+                position: absolute;
+            }
+            &_hoverEn {
+                font-size: 100px;
+                color: #004178;
+                font-family: "Noto Sans JP", sans-serif;
+                font-weight: 900;
+                line-height: 1;
+                position: absolute;
+                top: 10px;
+                left: 30px;
+            }
+            &_hoverTxt {
+                margin-top: 40px;
+                font-size: 24px;
+                font-weight: bold;
+                font-family: "Zen Kaku Gothic New", sans-serif;
+                letter-spacing: 0.12em;
+                line-height: 1.6;
+                text-align: center;
+            }
+            &_box {
+                width: 400px;
+                height: 400px;
+                border: 1px solid #004178;
+                background-color: #f0f4f7;
+                border-radius: 10px;
+                margin-bottom: 50px;
+                &:nth-child(5) {
+                    .faq-item_hover {
+                        padding-top: 52px;
+                    }
+                }
+                &:nth-child(6) {
+                    .faq-item_hover {
+                        padding-top: 52px;
+                    }
+                }
+                &:hover {
+                    transition: all 0.5s;
+                    .faq-item_origin {
+                        display: none;
+                    }
+                    .faq-item_hover {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .what {
+        margin-top: 100px;
+        &_ttl {
+            font-size: 48px;
+            font-weight: bold;
+            font-family: "Zen Kaku Gothic New", sans-serif;
+            color: #004178;
+            text-align: center;
+            span {
+                font-size: 66px;
+            }
+        }
+        &_subttl {
+            font-size: 36px;
+            font-weight: bold;
+            font-family: "Zen Kaku Gothic New", sans-serif;
+            color: #004178;
+            text-align: center;
+            margin-top: 60px;
+        }
+        &_txt {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: calc(35 / 24);
+            color: #004178;
+            text-align: center;
+            margin-top: 30px;
+        }
+        &-item {
+            max-width: 1235px;
+            margin: 100px auto 0;
+            background-color: #004178;
+            border-radius: 10px;
+            padding: 50px;
+            font-family: "Zen Kaku Gothic New", sans-serif;
+            color: white;
+            font-weight: bold;
+            &_row {
+                margin-top: 25px;
+            }
+            &_ttl {
+                font-size: 36px;
+                margin-bottom: 50px;
+            }
+            &_lead {
+                span {
+                    &:first-child {
+                        min-width: 60px;
+                    }
+                    &:nth-child(2) {
+                        font-size: 24px;
+                    }
+                }
+            }
+            &_txt {
+                font-size: 18px;
+                margin-top: 15px;
+            }
+        }
+        &-bottom {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #004178;
+            font-family: "Zen Kaku Gothic New", sans-serif;
+            margin-top: 75px;
+            letter-spacing: 0.1em;
+        }
+    }
+    .interview {
+        margin-top: 100px;
+        background-color: #f0f4f7;
+        padding: 150px 0 130px;
+        &-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        &-lead {
+            font-weight: bold;
+            color: #004178;
+            font-family: "Zen Kaku Gothic New", sans-serif;
+            text-align: center;
+            letter-spacing: 0.1em;
+            &_en {
+                font-size: 48px;
+            }
+            &_jp {
+                font-size: 20px;
+                margin: 30px 0 50px;
+            }
+            &_ttl {
+                font-size: 36px;
+                line-height: calc(45 / 36);
+            }
+        }
+        &-item {
+            margin-top: 80px;
+            border: 5px solid white;
+            border-radius: 10px;
+            padding: 45px 35px;
+            color: #004178;
+            &_area {
+                max-width: 810px;
+            }
+            &_ttl {
+                font-size: 20px;
+                font-weight: bold;
+                font-family: "Zen Kaku Gothic New", sans-serif;
+                margin-top: 20px;
+                &:first-child {
+                    margin-top: unset;
+                }
+            }
+            &_txt {
+                font-size: 20px;
+                margin-top: 10px;
+            }
+            &_pos {
+                text-align: center;
+                font-size: 20px;
+                font-weight: bold;
+                color: #004178;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .find {
+        margin: 150px 0;
+        font-family: "Zen Kaku Gothic New", sans-serif;
+        font-weight: bold;
+        color: #004178;
+        &-inner {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        &_ttl {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 80px;
+        }
+        &-row {
+            margin-top: 50px;
+            &_ttl {
+                margin-left: 15px;
+                font-size: 24px;
+                span {
+                    font-size: 30px;
+                }
+            }
+            &_txt {
+                margin-top: 10px;
+            }
+        }
+    }
+    .detail {
+        background-color: #004178;
+        font-family: "Zen Kaku Gothic New", sans-serif;
+        padding: 150px 0;
+        &_ttl {
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+        &-inner {
+            max-width: 1160px;
+            margin: 0 auto;
+        }
+        &-item {
+            margin-top: 120px;
+            .box {
+                background-color: white;
+                border-radius: 10px;
+                max-width: 500px;
+                padding: 30px 25px;
+                width: 40%;
+                margin-bottom: 40px;
+                min-height: 300px;
+                &:last-child {
+                    margin-bottom: unset;
+                }
+                &_ttl {
+                    font-size: 24px;
+                    font-weight: bold;
+                    letter-spacing: 0.1em;
+                    color: #004178;
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid #004178;
+                    padding-left: 10px;
+                }
+                &_txt {
+                    font-size: 18px;
+                    font-weight: bold;
+                    letter-spacing: 0.12em;
+                }
+                &_txtSm {
+                    font-size: 18px;
+                    line-height: calc(25 / 18);
+                    letter-spacing: 0.12em;
+                    &.mt20 {
+                        margin-top: 20px;
+                    }
+                }
+                .area {
+                    padding: 20px 0 0 10px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1440px) {
+    #recruit {
+        .other-inner {
+            width: 88%;
+        }
+        .vision {
+            &_ttl {
+                font-size: 48rem;
+            }
+            &_txt {
+                font-size: 24px;
+            }
+        }
+        .faq {
+            margin-top: 120rem;
+            &-item {
+                &_box {
+                    width: 400rem;
+                    height: 400rem;
+                    &:first-child {
+                        .faq-item_icon {
+                            img {
+                                width: 192rem;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        .faq-item_icon {
+                            img {
+                                width: 164rem;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        .faq-item_icon {
+                            img {
+                                width: 144rem;
+                            }
+                        }
+                    }
+                    &:nth-child(4) {
+                        .faq-item_icon {
+                            img {
+                                width: 160rem;
+                            }
+                        }
+                    }
+                    &:nth-child(5) {
+                        .faq-item_icon {
+                            img {
+                                width: 160rem;
+                            }
+                        }
+                    }
+                    &:nth-child(6) {
+                        .faq-item_icon {
+                            img {
+                                width: 159rem;
+                            }
+                        }
+                    }
+                }
+                &_originEn {
+                    font-size: 280rem;
+                    margin-bottom: 80rem;
+                }
+                &_originJp {
+                    font-size: 24rem;
+                }
+                &_hover {
+                    padding-top: 80rem;
+                }
+                &_hoverEn {
+                    font-size: 100rem;
+                    letter-spacing: 30rem;
+                    top: 10rem;
+                }
+                &_hoverTxt {
+                    font-size: 24rem;
+                    margin-top: 40rem;
+                }
+            }
+        }
+        .what {
+            &_ttl {
+                font-size: 48rem;
+                span {
+                    font-size: 66rem;
+                }
+            }
+            &_subttl {
+                font-size: 36rem;
+            }
+            &_txt {
+                font-size: 24rem;
+            }
+            &-item {
+                &_ttl {
+                    font-size: 36rem;
+                    margin-bottom: 50rem;
+                }
+            }
+            &-bottom {
+                font-size: 24rem;
+            }
+        }
+        .interview {
+            margin-top: 100rem;
+            padding: 150rem 0 130rem;
+            &-inner {
+                width: 88%;
+            }
+            &-lead {
+                &_ttl {
+                    font-size: 36rem;
+                }
+            }
+            &-item {
+                &_area {
+                    max-width: 810rem;
+                    margin-right: 30rem;
+                }
+                &.reset {
+                    .interview-item_area {
+                        margin-left: 30rem;
+                        margin-right: unset;
+                    }
+                }
+            }
+        }
+        .find {
+            margin: 150rem 0;
+            &-inner {
+                width: 88%;
+            }
+            &_ttl {
+                font-size: 36rem;
+                margin-bottom: 80rem;
+            }
+            &-row {
+                &_ttl {
+                    font-size: 24rem;
+                    span {
+                        font-size: 30rem;
+                    }
+                }
+                &_icon {
+                    img {
+                        width: 40rem;
+                    }
+                }
+            }
+        }
+        .detail {
+            &-inner {
+                width: 88%;
+            }
+            &-item {
+                .box {
+                    width: 48%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    #recruit {
+        .recruit-fv {
+            padding: 100px 0;
+            .c-sub_bottom {
+                margin-top: 60px;
+                font-size: 18px;
+                width: 88%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .vision {
+            margin-top: 60px;
+            &_img {
+                img {
+                    height: 250px;
+                }
+            }
+            &_ttl {
+                font-size: 22px;
+                margin: 30px 0 20px;
+            }
+            &_txt {
+                font-size: 18px;
+                text-align: left;
+                line-height: 2;
+            }
+        }
+        .faq {
+            margin-top: 80px;
+            &-ttl {
+                &_en {
+                    font-size: 30px;
+                }
+                &_jp {
+                    font-size: 20px;
+                }
+            }
+            &-item {
+                margin-top: 40px;
+                &_box {
+                    width: 100%;
+                    height: 350px;
+                    &:first-child {
+                        .faq-item_icon {
+                            img {
+                                width: 192px;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        .faq-item_icon {
+                            img {
+                                width: 164px;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        .faq-item_icon {
+                            img {
+                                width: 144px;
+                            }
+                        }
+                    }
+                    &:nth-child(4) {
+                        .faq-item_icon {
+                            img {
+                                width: 160px;
+                            }
+                        }
+                    }
+                    &:nth-child(5) {
+                        .faq-item_icon {
+                            img {
+                                width: 160px;
+                            }
+                        }
+                    }
+                    &:nth-child(6) {
+                        .faq-item_icon {
+                            img {
+                                width: 159px;
+                            }
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: unset;
+                    }
+                }
+                &_originEn {
+                    font-size: 180px;
+                }
+                &_originJp {
+                    font-size: 20px;
+                }
+                &_hover {
+                    padding-top: 60px;
+                }
+                &_hoverEn {
+                    font-size: 60px;
+                }
+                &_hoverTxt {
+                    font-size: 20px;
+                }
+            }
+        }
+        .what {
+            margin-top: 80px;
+            &_ttl {
+                font-size: 30px;
+                span {
+                    font-size: 34px;
+                }
+            }
+            &_subttl {
+                font-size: 20px;
+                margin-top: 40px;
+            }
+            &_txt {
+                font-size: 16px;
+                text-align: left;
+                line-height: 2;
+            }
+            &-item {
+                margin-top: 40px;
+                padding: 30px 20px;
+                &_ttl {
+                    font-size: 20px;
+                    margin-bottom: 30px;
+                }
+                &_lead {
+                    span {
+                        &:nth-child(2) {
+                            font-size: 18px;
+                        }
+                    }
+                }
+                &_txt {
+                    font-size: 16px;
+                }
+            }
+            &-bottom {
+                margin-top: 40px;
+                font-size: 16px;
+                text-align: left;
+            }
+        }
+        .interview {
+            margin-top: 60px;
+            padding: 60px 0;
+            &-lead {
+                &_en {
+                    font-size: 34px;
+                }
+                &_jp {
+                    font-size: 18px;
+                    margin: 10px 0 30px;
+                }
+                &_ttl {
+                    font-size: 20px;
+                    line-height: 1.7;
+                }
+            }
+            &-item {
+                margin-top: 40px;
+                border: 2px solid white;
+                padding: 30px 20px;
+                flex-direction: column-reverse;
+                &_pos {
+                    font-size: 18px;
+                }
+                &_area {
+                    margin-right: unset;
+                    margin-top: 20px;
+                }
+                &_ttl {
+                    font-size: 18px;
+                }
+                &_txt {
+                    font-size: 16px;
+                }
+                &.reset {
+                    flex-direction: column;
+                    .interview-item_area {
+                        margin-left: unset;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+        .find {
+            margin: 80px 0;
+            &_ttl {
+                font-size: 24px;
+                margin-bottom: 40px;
+            }
+            &-row {
+                margin-top: 40px;
+                &_ttl {
+                    font-size: 18px;
+                    span {
+                        font-size: 20px;
+                    }
+                }
+                &_icon {
+                    img {
+                        width: 20px;
+                        min-width: 20px;
+                    }
+                }
+            }
+        }
+        .detail {
+            padding: 80px 0;
+            margin-bottom: 60px;
+            &_ttl {
+                font-size: 34px;
+            }
+            &-item {
+                margin-top: 40px;
+                .box {
+                    width: 100%;
+                    max-width: unset;
+                }
+            }
+        }
+    }
+}

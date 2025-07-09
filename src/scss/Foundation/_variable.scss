@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans+JP:wght@100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap');
+$font_noto: "Noto Sans CJK JP",
+sans-serif;
+$font_gothic: "Zen Kaku Gothic New",
+sans-serif;
+$font_cour: "Courgette",
+cursive;
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.mt-15 {
+    margin-top: 15px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+.color1 {
+    color: #D4A849;
+}

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <title></title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/img/favicon.ico">
+
+    <!-- Google Tag Manager -->
+
+    <!-- End Google Tag Manager -->
+
+    <!-- OGP -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="./img/ogimage.jpg" />
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--  FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans+JP:wght@100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!--  FONT  -->
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'hcq6ong',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body>
+
+    <div class="menu-overlay">
+        <div class="overlay-links">
+            <div class="overlay-links__group">
+                <a href="/orivance" class="overlay-links__lead d-flex flex-column align-center flex-center">
+                    <span>TOP</span>
+                </a>
+                <a href="service.html" class="overlay-links__lead d-flex flex-column align-center flex-center">
+                    <span>SERVICE</span>
+                    <span>事業内容</span>
+                </a>
+                <a href="achieve.html" class="overlay-links__lead d-flex flex-column align-center flex-center">
+                    <span>PROJECTS</span>
+                    <span>事例と実績</span>
+                </a>
+                <a href="about.html" class="overlay-links__lead d-flex flex-column align-center flex-center">
+                    <span>ABOUT</span>
+                    <span>会社概要</span>
+                </a>
+                <a href="recruit.html" class="overlay-links__lead d-flex flex-column align-center flex-center">
+                    <span>RECRUIT</span>
+                    <span>会社概要</span>
+                </a>
+            </div>
+            <div class="overlay-links_contact d-flex flex-center">
+                <a href="contact.html" class="c-btn_msg d-flex flex-row flex-center align-center">
+                    <div class="c-btn_icon d-flex">
+                        <img src="assets/img/common/icon_msg_white.png" alt="">
+                    </div>
+                    <div class="c-btn_contact">
+                        <p class="c-btn_en">CONTACT</p>
+                        <p class="c-btn_jp">お問い合わせ</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header d-flex flex-row align-center flex-between">
+        <a href="/orivance" class="header-logo">
+            <span class="d-flex"><img src="assets/img/common/hd_logo.png" alt=""></span>
+        </a>
+        <div class="header-item d-flex flex-row align-center">
+            <a href="service.html" class="header-item__link">
+                <p class="header-item__en">SERVICE</p>
+                <p class="header-item__jp">事業内容</p>
+            </a>
+            <a href="achieve.html" class="header-item__link">
+                <p class="header-item__en">PROJECTS</p>
+                <p class="header-item__jp">事例と実績</p>
+            </a>
+            <a href="about.html" class="header-item__link">
+                <p class="header-item__en">ABOUT</p>
+                <p class="header-item__jp">会社概要</p>
+            </a>
+            <a href="recruit.html" class="header-item__link">
+                <p class="header-item__en">RECRUIT</p>
+                <p class="header-item__jp">採用情報</p>
+            </a>
+            <a href="contact.html" class="c-btn_msg d-flex flex-row flex-center align-center">
+                <div class="c-btn_icon d-flex">
+                    <img src="assets/img/common/icon_msg_white.png" alt="">
+                </div>
+                <div class="c-btn_contact">
+                    <p class="c-btn_en">CONTACT</p>
+                    <p class="c-btn_jp">お問い合わせ</p>
+                </div>
+            </a>
+        </div>
+        <div class="sp-menu">
+            <div class="sp-menu-item">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <main id="recruit">
+        <div class="recruit-fv">
+            <div data-wow-delay=".2s" class="c-sub_fv d-flex flex-center wow fadeInUp">
+                <div class="c-sub_ttl">
+                    <p class="c-sub_en"><span>RECRUIT</span></p>
+                    <h3 class="c-sub_jp">採用情報</h3>
+                </div>
+            </div>
+            <p data-wow-delay=".2s" class="c-sub_bottom wow fadeInUp">ともにチャレンジしていける仲間を<br class="u-sp-block">募集しています</p>
+        </div>
+        <div class="other-inner">
+            <div class="vision">
+                <figure data-wow-delay=".2s" class="vision_img wow fadeInUp">
+                    <img src="assets/img/recruit/recruit_img1.png" alt="">
+                </figure>
+                <p data-wow-delay=".2s" class="vision_ttl wow fadeInUp">社員の幸せを追求し、<br class="u-sp-block">社会に貢献する。</p>
+                <p data-wow-delay=".2s" class="vision_txt wow fadeInUp">企業は社員のためにあり、社員の成長と安定が会社の力となる。<br>経済性を追求し、利益＝付加価値を生み出すことで、<br>社員と社会に貢献し続ける。</p>
+            </div>
+            <div class="faq">
+                <div data-wow-delay=".2s" class="faq-ttl wow fadeInUp">
+                    <p class="faq-ttl_en">Q&A</p>
+                    <p class="faq-ttl_jp">orivanceについて</p>
+                </div>
+                <div data-wow-delay=".2s" class="faq-item d-flex flex-wrap flex-between wow fadeInUp">
+                    <div class="faq-item_box">
+                        <div class="faq-item_origin d-flex flex-center align-center">
+                            <div class="faq-item_originG">
+                                <p class="faq-item_originEn">Q</p>
+                                <p class="faq-item_originJp">どんな社風？</p>
+                            </div>
+                        </div>
+                        <div class="faq-item_hover">
+                            <p class="faq-item_hoverEn">A</p>
+                            <div class="faq-item_hoverContent d-flex flex-column align-center flex-center">
+                                <figure class="faq-item_icon">
+                                    <img src="assets/img/recruit/recruit_icon1.png" alt="">
+                                </figure>
+                                <p class="faq-item_hoverTxt">若手が多く<br>フラットな環境</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item_box">
+                        <div class="faq-item_origin d-flex flex-center align-center">
+                            <div class="faq-item_originG">
+                                <p class="faq-item_originEn">Q</p>
+                                <p class="faq-item_originJp">転勤はあるの？</p>
+                            </div>
+                        </div>
+                        <div class="faq-item_hover">
+                            <p class="faq-item_hoverEn">A</p>
+                            <div class="faq-item_hoverContent d-flex flex-column align-center flex-center">
+                                <figure class="faq-item_icon">
+                                    <img src="assets/img/recruit/recruit_icon2.png" alt="">
+                                </figure>
+                                <p class="faq-item_hoverTxt">転勤はございません</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item_box">
+                        <div class="faq-item_origin d-flex flex-center align-center">
+                            <div class="faq-item_originG">
+                                <p class="faq-item_originEn">Q</p>
+                                <p class="faq-item_originJp">毎月の残業時間は？</p>
+                            </div>
+                        </div>
+                        <div class="faq-item_hover">
+                            <p class="faq-item_hoverEn">A</p>
+                            <div class="faq-item_hoverContent d-flex flex-column align-center flex-center">
+                                <figure class="faq-item_icon">
+                                    <img src="assets/img/recruit/recruit_icon3.png" alt="">
+                                </figure>
+                                <p class="faq-item_hoverTxt">繁忙期と閑散期があるため、<br>時期によって差があります</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item_box">
+                        <div class="faq-item_origin d-flex flex-center align-center">
+                            <div class="faq-item_originG">
+                                <p class="faq-item_originEn">Q</p>
+                                <p class="faq-item_originJp">お得な制度は？</p>
+                            </div>
+                        </div>
+                        <div class="faq-item_hover">
+                            <p class="faq-item_hoverEn">A</p>
+                            <div class="faq-item_hoverContent d-flex flex-column align-center flex-center">
+                                <figure class="faq-item_icon">
+                                    <img src="assets/img/recruit/recruit_icon4.png" alt="">
+                                </figure>
+                                <p class="faq-item_hoverTxt">弊社商品<br>社員割引あり</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item_box">
+                        <div class="faq-item_origin d-flex flex-center align-center">
+                            <div class="faq-item_originG">
+                                <p class="faq-item_originEn">Q</p>
+                                <p class="faq-item_originJp">年齢層は？</p>
+                            </div>
+                        </div>
+                        <div class="faq-item_hover">
+                            <p class="faq-item_hoverEn">A</p>
+                            <div class="faq-item_hoverContent d-flex flex-column align-center flex-center">
+                                <figure class="faq-item_icon">
+                                    <img src="assets/img/recruit/recruit_icon5.png" alt="">
+                                </figure>
+                                <p class="faq-item_hoverTxt">20代の社員が<br>多く活躍中</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item_box">
+                        <div class="faq-item_origin d-flex flex-center align-center">
+                            <div class="faq-item_originG">
+                                <p class="faq-item_originEn">Q</p>
+                                <p class="faq-item_originJp">男女比はどれくらい？</p>
+                            </div>
+                        </div>
+                        <div class="faq-item_hover">
+                            <p class="faq-item_hoverEn">A</p>
+                            <div class="faq-item_hoverContent d-flex flex-column align-center flex-center">
+                                <figure class="faq-item_icon">
+                                    <img src="assets/img/recruit/recruit_icon6.png" alt="">
+                                </figure>
+                                <p class="faq-item_hoverTxt">女性69%<br>男性31% </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="what">
+                <p data-wow-delay=".2s" class="what_ttl wow fadeInUp"><span>orivance</span>は<br>こんなところ</p>
+                <p data-wow-delay=".2s" class="what_subttl wow fadeInUp">若手が活躍！自由な社風のEC企業</p>
+                <p data-wow-delay=".2s" class="what_txt wow fadeInUp">私たちは、ECサイト事業を展開する成長企業です。<br class="u-sp-block">若手メンバーが中心となり、<br class="u-pc-block">アイデアをどんどん形にできる環境が特徴。年齢や役職に関係なく、フラットに<br class="u-pc-block">意見を出し合いながら、ユーザーにとって最高のサービスを追求しています。</p>
+                <div data-wow-delay=".2s" class="what-item wow fadeInUp">
+                    <p class="what-item_ttl">ラフな雰囲気 × 柔軟な働き方</p>
+                    <div class="what-item_row">
+                        <p class="what-item_lead d-flex flex-row align-center">
+                            <span class="d-flex">
+                                <img src="assets/img/recruit/icon_cloth.png" alt="">
+                            </span>
+                            <span>服装自由</span>
+                        </p>
+                        <p class="what-item_txt">Tシャツ・デニム・スニーカーOK！自分らしいスタイルで働けます。</p>
+                    </div>
+                    <div class="what-item_row">
+                        <p class="what-item_lead d-flex flex-row align-center">
+                            <span class="d-flex">
+                                <img src="assets/img/recruit/icon_hair.png" alt="">
+                            </span>
+                            <span>ネイル・髪色自由</span>
+                        </p>
+                        <p class="what-item_txt">個性を大切にするカルチャー。おしゃれを楽しみながら働けます。</p>
+                    </div>
+                    <div class="what-item_row">
+                        <p class="what-item_lead d-flex flex-row align-center">
+                            <span class="d-flex">
+                                <img src="assets/img/recruit/icon_clock.png" alt="">
+                            </span>
+                            <span>フレックス制度あり</span>
+                        </p>
+                        <p class="what-item_txt">ライフスタイルに合わせた柔軟な働き方が可能。</p>
+                    </div>
+                    <div class="what-item_row">
+                        <p class="what-item_lead d-flex flex-row align-center">
+                            <span class="d-flex">
+                                <img src="assets/img/recruit/icon_people.png" alt="">
+                            </span>
+                            <span>オープンなコミュニケーション</span>
+                        </p>
+                        <p class="what-item_txt">役職に縛られない風通しの良さが魅力。</p>
+                    </div>
+                </div>
+                <p data-wow-delay=".2s" class="what-bottom wow fadeInUp">新しい挑戦を楽しみながら、一緒に会社を成長させていきませんか？</p>
+            </div>
+        </div>
+        <div class="interview">
+            <div class="interview-inner">
+                <div data-wow-delay=".2s" class="interview-lead wow fadeInUp">
+                    <p class="interview-lead_en">INTERVIEW</p>
+                    <p class="interview-lead_jp">先輩の声</p>
+                    <p class="interview-lead_ttl">メンバー達に当社を選んだ経緯<br>仕事のやりがいや面白さ<br>メッセージを聞きました。</p>
+                </div>
+                <div data-wow-delay=".2s" class="interview-item d-flex flex-row align-center flex-between wow fadeInUp">
+                    <div class="interview-item_area">
+                        <p class="interview-item_ttl">●入社のきっかけは？</p>
+                        <p class="interview-item_txt">ネットショッピングが好きで、「運営側を知りたい！」と思ったのがきっかけです。</p>
+                        <p class="interview-item_ttl">● どんな仕事をしてる？</p>
+                        <p class="interview-item_txt">商品登録やページ更新、キャンペーン企画、など幅広くやってます！</p>
+                        <p class="interview-item_ttl">● やりがいは？</p>
+                        <p class="interview-item_txt">自分の施策で売上が伸びたときは最高に嬉しいです。お客様の「買ってよかった！」の声も励みになります。</p>
+                        <p class="interview-item_ttl">● 会社の雰囲気は？</p>
+                        <p class="interview-item_txt">フランクで話しやすい！新しいアイデアもすぐ試せる環境です。</p>
+                        <p class="interview-item_ttl">● 今後の目標は？</p>
+                        <p class="interview-item_txt">売上の拡大や新商品の魅力をより伝えられる商品ページを作ること！マーケティングの勉強も頑張りたいです。</p>
+                        <p class="interview-item_ttl">●これから入る人へメッセージ</p>
+                        <p class="interview-item_txt">未経験でも大丈夫！やる気があれば、どんどん成長できますよ。</p>
+                    </div>
+                    <div class="interview-item_right d-flex flex-column align-center">
+                        <p class="interview-item_pos">ECサイト運営<br>（26歳・男性　Nさん） </p>
+                        <figure class="interview-item_img">
+                            <img src="assets/img/recruit/interview_img1.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div data-wow-delay=".2s" class="interview-item reset d-flex flex-row align-center flex-between wow fadeInUp">
+                    <div class="interview-item_right d-flex flex-column align-center">
+                        <p class="interview-item_pos">Webデザイナー<br>（26歳・女性　Oさん） </p>
+                        <figure class="interview-item_img">
+                            <img src="assets/img/recruit/interview_img2.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="interview-item_area">
+                        <p class="interview-item_ttl">●入社のきっかけは？</p>
+                        <p class="interview-item_txt">もともとデザインが好きで、Web業界に興味がありました。ここは自由な発想を大事にしている会社だったので、楽しそう！と思って入</p>
+                        <p class="interview-item_ttl">● どんな仕事をしてる？</p>
+                        <p class="interview-item_txt">サイトのデザインやバナー制作、画面のレイアウト調整などを担当しています。</p>
+                        <p class="interview-item_ttl">● やりがいは？</p>
+                        <p class="interview-item_txt">自分がデザインしたページが公開されて、多くの人に見てもらえるのが嬉しいです。<br>いい反応があったときは、さらにやる気が出ます！</p>
+                        <p class="interview-item_ttl">● 会社の雰囲気は？</p>
+                        <p class="interview-item_txt">明るくて話しやすい環境です。デザインの意見も言いやすくて、いいものを作ろう！<br>っていう空気が好きですね。</p>
+                        <p class="interview-item_ttl">● 今後の目標は？</p>
+                        <p class="interview-item_txt">「見た目のデザイン」と「使いやすさ」について勉強して、より良いデザインを提供 できるようになりたいです！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="find">
+            <div class="find-inner">
+                <p data-wow-delay=".2s" class="find_ttl wow fadeInUp">こんな人を求めています</p>
+                <div data-wow-delay=".2s" class="find-row wow fadeInUp">
+                    <div class="find-row_lead d-flex flex-row align-center">
+                        <p class="find-row_icon d-flex"><img src="assets/img/recruit/icon_check.png" alt=""></p>
+                        <p class="find-row_ttl">ECの世界に<span>ワクワク</span>できる方！</p>
+                    </div>
+                    <p class="find-row_txt">「どうすればもっと売れる？」「お客様に喜んでもらうには？」と考えるのが好きな方、大歓迎！</p>
+                </div>
+                <div data-wow-delay=".2s" class="find-row wow fadeInUp">
+                    <div class="find-row_lead d-flex flex-row align-center">
+                        <p class="find-row_icon d-flex"><img src="assets/img/recruit/icon_check.png" alt=""></p>
+                        <p class="find-row_ttl">トレンドに敏感で、新しいことに<span>チャレンジ</span>できる方！</p>
+                    </div>
+                    <p class="find-row_txt">SNSやマーケティングの最新トレンドをキャッチして、自分のアイデアを活かしたい方。</p>
+                </div>
+                <div data-wow-delay=".2s" class="find-row wow fadeInUp">
+                    <div class="find-row_lead d-flex flex-row align-center">
+                        <p class="find-row_icon d-flex"><img src="assets/img/recruit/icon_check.png" alt=""></p>
+                        <p class="find-row_ttl">チームで<span>楽しく</span>働ける方！</p>
+                    </div>
+                    <p class="find-row_txt">若手が多くフラットな環境なので、みんなで意見を出し合いながら進めるのが得意な方にピッタリ！</p>
+                </div>
+                <div data-wow-delay=".2s" class="find-row wow fadeInUp">
+                    <div class="find-row_lead d-flex flex-row align-center">
+                        <p class="find-row_icon d-flex"><img src="assets/img/recruit/icon_check.png" alt=""></p>
+                        <p class="find-row_ttl">「やったことないけど、やってみたい！」を<span>大事</span>にできる方！</p>
+                    </div>
+                    <p class="find-row_txt">経験よりも「やる気」重視。未経験でも「まずやってみる！」というスタンスの方を応援します！</p>
+                </div>
+                <div data-wow-delay=".2s" class="find-row wow fadeInUp">
+                    <div class="find-row_lead d-flex flex-row align-center">
+                        <p class="find-row_icon d-flex"><img src="assets/img/recruit/icon_check.png" alt=""></p>
+                        <p class="find-row_ttl">ECやデジタルに<span>興味</span>がある方！</p>
+                    </div>
+                    <p class="find-row_txt">ネットショップ運営、マーケティング、デザイン、物流などECに関わる仕事に興味があればOK！</p>
+                </div>
+            </div>
+        </div>
+        <div class="detail">
+            <div class="detail-inner">
+                <p data-wow-delay=".2s" class="detail_ttl wow fadeInUp">募集要項</p>
+                <div class="detail-item d-flex flex-wrap flex-between">
+                    <div data-wow-delay=".2s" class="box wow fadeInUp">
+                        <p class="box_ttl">職種</p>
+                        <div class="area">
+                            <p class="box_txt">■WEBマーケター</p>
+                            <p class="box_txt">■WEBデザイナー</p>
+                            <p class="box_txtSm">※ECにおける販売、広告戦略の企画、営業企画経験がある方<br>※学歴不問<br>※20代〜30代活躍中</p>
+                        </div>
+                    </div>
+                    <div data-wow-delay=".2s" class="box wow fadeInUp">
+                        <p class="box_ttl">福利厚生</p>
+                        <div class="area">
+                            <p class="box_txtSm">◎社会保険完備<br>◎車通勤可(ガソリン代全額支給)<br>◎社員旅行<br>など…</p>
+                        </div>
+                    </div>
+                    <div data-wow-delay=".2s" class="box wow fadeInUp">
+                        <p class="box_ttl">雇用形態</p>
+                        <div class="area">
+                            <p class="box_txt">■正社員</p>
+                        </div>
+                    </div>
+                    <div data-wow-delay=".2s" class="box wow fadeInUp">
+                        <p class="box_ttl">給与</p>
+                        <div class="area">
+                            <p class="box_txt d-flex flex-wrap flex-between">
+                                <span>■正社員</span>
+                                <span>月給：27万円～</span>
+                            </p>
+                            <p class="box_txtSm mt20">※使用期間あり<br>※ご経験やスキルを考慮の上決定いたします。</p>
+                        </div>
+                    </div>
+                    <div data-wow-delay=".2s" class="box wow fadeInUp">
+                        <p class="box_ttl">勤務時間</p>
+                        <div class="area">
+                            <p class="box_txt">
+                                <span>■正社員</span>
+                                <span>9:00〜18:00（休憩1時間）</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div data-wow-delay=".2s" class="box wow fadeInUp">
+                        <p class="box_ttl">勤務地</p>
+                        <div class="area">
+                            <p class="box_txtSm">愛知県知立市東栄3丁目48番地<br>名古屋鉄道三河線「三河知立駅」から徒歩9分</p>
+                        </div>
+                    </div>
+                    <div data-wow-delay=".2s" class="box wow fadeInUp">
+                        <p class="box_ttl">休暇</p>
+                        <div class="area">
+                            <p class="box_txtSm">【年間休日111日以上】<br>◎完全週休2日（土日）<br>◎長期休暇</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div data-wow-delay=".2s" class="bottom-social d-flex flex-row align-center flex-center wow fadeInUp">
+        <a href="#" class="bottom-social_link d-flex">
+            <img src="assets/img/common/icon_insta.png" alt="">
+        </a>
+        <a href="#" class="bottom-social_link d-flex">
+            <img src="assets/img/common/icon_x.png" alt="">
+        </a>
+        <a href="#" class="bottom-social_link d-flex">
+            <img src="assets/img/common/icon_line.png" alt="">
+        </a>
+        <a href="#" class="bottom-social_link d-flex">
+            <img src="assets/img/common/icon_f.png" alt="">
+        </a>
+    </div>
+
+    <div class="footer">
+        <a href="#" class="footer-scroll">
+            <p class="footer-scroll_en">Top</p>
+            <p class="footer-scroll_action">
+                <span></span>
+            </p>
+        </a>
+        <div class="footer-inner">
+            <div class="footer-item d-flex flex-row flex-between">
+                <div class="footer-company">
+                    <a href="/orivance" class="footer-logo d-flex">
+                        <span class="d-flex"><img src="assets/img/common/ft_logo.png" alt=""></span>
+                    </a>
+                    <p class="footer-company_name">株式会社orivance</p>
+                    <p class="footer-company_address">〒472-0043<br>愛知県知立市東栄3丁目48番地</p>
+                </div>
+                <div class="footer-area d-flex flex-row flex-between">
+                    <ul class="footer-area_menu">
+                        <li>
+                            <a href="/orivance" class="footer-area_link d-flex flex-column align-start">
+                                <span>TOP</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="service.html" class="footer-area_link d-flex flex-column align-start">
+                                <span>SERVICE</span>
+                                <span>事業内容</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="achieve.html" class="footer-area_link d-flex flex-column align-start">
+                                <span>PROJECTS</span>
+                                <span>事例と実績</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="footer-area_link d-flex flex-column align-start">
+                                <span>ABOUT</span>
+                                <span>会社概要</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="recruit.html" class="footer-area_link d-flex flex-column align-start">
+                                <span>RECRUIT</span>
+                                <span>採用情報</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="c-btn_msg d-flex flex-row flex-center align-center">
+                        <div class="c-btn_icon d-flex">
+                            <img src="assets/img/common/icon_msg_white.png" alt="">
+                        </div>
+                        <div class="c-btn_contact">
+                            <p class="c-btn_en">CONTACT</p>
+                            <p class="c-btn_jp">お問い合わせ</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom d-flex flex-row align-center flex-between">
+                <a href="privacy.html" class="footer-bottom_link">プライバシーポリシー</a>
+                <p class="footer-bottom_copy">Copyright © 株式会社orivance</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/common.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

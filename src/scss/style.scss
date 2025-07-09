@@ -1,0 +1,26 @@
+// FLOCSS
+// https://qiita.com/super-mana-chan/items/644c6827be954c8db2c0
+// Foundation
+@forward "Foundation/reset";
+@forward "Foundation/variable";
+@forward "Foundation/mixin";
+@forward "Foundation/base";
+@forward "Foundation/animation";
+// Object
+// サイト全体における、繰り返されるビジュアルパターンをすべてObjectと定義。
+// - Component
+@forward "Object/Component/component";
+// Pages
+// ＊独自
+@forward "Pages/index";
+@forward "Pages/service";
+@forward "Pages/achieve";
+@forward "Pages/about";
+@forward "Pages/recruit";
+@forward "Pages/other";
+//vendor
+// *独自
+//外部読み込みスクリプトのCSS上書きなど
+@forward "Vendor/vendor";
+// - Utility
+@forward "Object/Utility/u-utility" // sass --watch src/scss/style.scss:assets/css/style.css --style expanded --no-cache

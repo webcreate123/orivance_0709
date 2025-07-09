@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans+JP:wght@100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    @media(min-width: 1921px) {
+        font-size: 1px;
+    }
+    @media(max-width: 1920px) {
+        font-size: 0.05vw;
+    }
+    @media(max-width: 1440px) {
+        font-size: 0.07vw;
+    }
+    @media(max-width: 768px) {
+        font-size: 0.27vw;
+    }
+}
+
+body {
+    position: relative;
+    font-family: "Noto Sans CJK JP", sans-serif;
+    font-size: 16px;
+    color: #333333;
+    overflow-x: hidden;
+    z-index: 0;
+    background-color: white;
+    letter-spacing: 0.1em;
+    line-height: 1.6;
+    letter-spacing: 0.07em;
+    box-sizing: content-box;
+    font-feature-settings: "palt";
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+button {
+    letter-spacing: 0;
+    cursor: pointer;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+figure,
+picture {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

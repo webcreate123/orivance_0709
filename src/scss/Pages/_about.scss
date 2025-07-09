@@ -1,0 +1,198 @@
+#about {
+    padding-top: 200px;
+    .intro {
+        margin-top: 150px;
+        &-item {
+            margin: 55px 110px 100px;
+            color: #004178;
+            &_ttl {
+                font-size: 48px;
+                font-weight: bold;
+                font-family: "Zen Kaku Gothic New", sans-serif;
+            }
+            &_en {
+                font-size: 24px;
+                font-family: "Zen Kaku Gothic New", sans-serif;
+            }
+            &_txt {
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 2;
+                letter-spacing: 0.1em;
+                margin-top: 50px;
+            }
+        }
+    }
+    .message {
+        background-color: #f0f4f7;
+        padding: 110px 0 140px;
+        &-item {
+            margin-top: 55px;
+            &_img {
+                margin-bottom: 250px;
+            }
+            &_txt {
+                font-family: "Zen Kaku Gothic New", sans-serif;
+                font-size: 20px;
+                line-height: calc(55 / 20);
+                letter-spacing: 0.05em;
+            }
+            &_company {
+                font-weight: 500;
+                letter-spacing: 0.12em;
+            }
+            &_pos {
+                font-weight: 500;
+                letter-spacing: 0.12em;
+                margin-right: 30px;
+            }
+            &_name {
+                font-size: 24px;
+                font-weight: 500;
+                letter-spacing: 0.12em;
+            }
+            &_area {
+                max-width: 660px;
+            }
+            &_bottom {
+                margin-top: 50px;
+            }
+        }
+    }
+    .company {
+        margin: 110px 0 0;
+        &-item {
+            max-width: 660px;
+            margin: 100px auto 0;
+            &_row {
+                border-bottom: 1px solid #004178;
+                padding: 15px 0;
+            }
+            &_category {
+                width: 50%;
+                font-weight: bold;
+            }
+            &_txt {
+                width: 50%;
+            }
+        }
+        &-bottom {
+            margin-top: 120px;
+            &_address {
+                font-size: 24px;
+                font-weight: 500;
+                margin-right: 50px;
+                min-width: 348px;
+            }
+            iframe {
+                width: 85%;
+                max-width: 1390px;
+                margin-right: 50px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1440px) {
+    #about {
+        padding-top: 200rem;
+        .intro {
+            &-item {
+                &_ttl {
+                    font-size: 48rem;
+                }
+                &_txt {
+                    font-size: 24rem;
+                }
+            }
+        }
+        .message {
+            &-item {
+                &_txt {
+                    font-size: 20rem;
+                }
+                &_area {
+                    margin-left: 50px;
+                    max-width: 660rem;
+                }
+            }
+        }
+        .company {
+            &-bottom {
+                &_address {
+                    font-size: 24rem;
+                    min-width: 348rem;
+                    margin-right: 50rem;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    #about {
+        padding-top: 100px;
+        .intro {
+            margin-top: 80px;
+            &-item {
+                margin: 40px 0 60px;
+                &_ttl {
+                    font-size: 20rem;
+                }
+                &_en {
+                    font-size: 16px;
+                }
+                &_txt {
+                    font-size: 16px;
+                }
+            }
+        }
+        .message {
+            padding: 60px 0;
+            &-item {
+                margin-top: 40px;
+                flex-direction: column;
+                &_img {
+                    margin-bottom: 30px;
+                }
+                &_area {
+                    max-width: unset;
+                    margin-left: unset;
+                }
+                &_txt {
+                    font-size: 16px;
+                    line-height: 2;
+                }
+            }
+        }
+        .company {
+            margin: 60px 0 0;
+            &-item {
+                margin: 40px 0 0;
+                &_row {
+                    flex-direction: column;
+                }
+                &_txt {
+                    margin-top: 10px;
+                    width: 100%;
+                }
+            }
+            &-bottom {
+                margin-top: 40px;
+                flex-direction: column;
+                align-items: flex-start;
+                iframe {
+                    width: 100%;
+                    margin-right: unset;
+                    height: 200px;
+                }
+                &_address {
+                    margin-right: unset;
+                    min-width: unset;
+                    font-size: 18px;
+                    padding: 15px 0 0 5%;
+                }
+            }
+        }
+    }
+}

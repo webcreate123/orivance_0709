@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <title></title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/img/favicon.ico">
+
+    <!-- Google Tag Manager -->
+
+    <!-- End Google Tag Manager -->
+
+    <!-- OGP -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="./img/ogimage.jpg" />
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--  FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!--  FONT  -->
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'hcq6ong',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body>
+
+    <div class="menu-overlay">
+        <div class="overlay-links">
+            <div class="overlay-links__group">
+                <a href="/orivance" class="overlay-links__lead d-flex flex-column align-center flex-center">
+                    <span>TOP</span>
+                </a>
+                <a href="service.html" class="overlay-links__lead d-flex flex-column align-center flex-center">
+                    <span>SERVICE</span>
+                    <span>事業内容</span>
+                </a>
+                <a href="achieve.html" class="overlay-links__lead d-flex flex-column align-center flex-center">
+                    <span>PROJECTS</span>
+                    <span>事例と実績</span>
+                </a>
+                <a href="about.html" class="overlay-links__lead d-flex flex-column align-center flex-center">
+                    <span>ABOUT</span>
+                    <span>会社概要</span>
+                </a>
+                <a href="recruit.html" class="overlay-links__lead d-flex flex-column align-center flex-center">
+                    <span>RECRUIT</span>
+                    <span>会社概要</span>
+                </a>
+            </div>
+            <div class="overlay-links_contact d-flex flex-center">
+                <a href="contact.html" class="c-btn_msg d-flex flex-row flex-center align-center">
+                    <div class="c-btn_icon d-flex">
+                        <img src="assets/img/common/icon_msg_white.png" alt="">
+                    </div>
+                    <div class="c-btn_contact">
+                        <p class="c-btn_en">CONTACT</p>
+                        <p class="c-btn_jp">お問い合わせ</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header d-flex flex-row align-center flex-between">
+        <a href="/orivance" class="header-logo">
+            <span class="d-flex"><img src="assets/img/common/hd_logo.png" alt=""></span>
+        </a>
+        <div class="header-item d-flex flex-row align-center">
+            <a href="service.html" class="header-item__link">
+                <p class="header-item__en">SERVICE</p>
+                <p class="header-item__jp">事業内容</p>
+            </a>
+            <a href="achieve.html" class="header-item__link">
+                <p class="header-item__en">PROJECTS</p>
+                <p class="header-item__jp">事例と実績</p>
+            </a>
+            <a href="about.html" class="header-item__link">
+                <p class="header-item__en">ABOUT</p>
+                <p class="header-item__jp">会社概要</p>
+            </a>
+            <a href="recruit.html" class="header-item__link">
+                <p class="header-item__en">RECRUIT</p>
+                <p class="header-item__jp">採用情報</p>
+            </a>
+            <a href="contact.html" class="c-btn_msg d-flex flex-row flex-center align-center">
+                <div class="c-btn_icon d-flex">
+                    <img src="assets/img/common/icon_msg_white.png" alt="">
+                </div>
+                <div class="c-btn_contact">
+                    <p class="c-btn_en">CONTACT</p>
+                    <p class="c-btn_jp">お問い合わせ</p>
+                </div>
+            </a>
+        </div>
+        <div class="sp-menu">
+            <div class="sp-menu-item">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <main id="about">
+        <div class="c-sub_fv d-flex flex-center">
+            <div data-wow-delay=".2s" class="c-sub_ttl wow fadeInUp">
+                <p class="c-sub_en"><span>ABOUT</span></p>
+                <h3 class="c-sub_jp">会社概要</h3>
+            </div>
+        </div>
+        <div class="c-inner">
+            <div class="intro">
+                <div data-wow-delay=".2s" class="intro_ttl wow fadeInUp">
+                    <p class="c-mark_ttl"><span>企業理念</span></p>
+                </div>
+                <div class="intro-item">
+                    <p data-wow-delay=".2s" class="intro-item_ttl wow fadeInUp">社会に貢献し社員の幸せを追求する</p>
+                    <p data-wow-delay=".2s" class="intro-item_en wow fadeInUp">Contribute to society and pursue employee happiness</p>
+                    <p data-wow-delay=".2s" class="intro-item_txt wow fadeInUp">社員を幸せにしたい。<br><br>企業は企業のためにあるのではなく、企業で働く社員のためにあると考えます。<br>社員の心の豊かさ、経済的な安定を追求し、充実した人生を送れる会社でありたい。<br><br>人間的に成長したという実感<br>安定した生活を築けるという安心感<br>会社を誇りに思える満足感<br>それを実現するためには、経済性の追求が不可欠です。<br><br>会社は利益を生み出し続けなければなりません。<br>利益とは、会社が生み出す 「付加価値」
+                        です。
+                        <br><br>そして、その付加価値を生み出すのは 「社員」 です。<br><br>だからこそ、社員の幸せを追求することは、社会に貢献し続けること につながると<br>私たちは考えています。</p>
+                </div>
+            </div>
+        </div>
+        <div class="message">
+            <div class="c-inner">
+                <div data-wow-delay=".2s" class="message_ttl wow fadeInUp">
+                    <p class="c-mark_ttl"><span>代表挨拶</span></p>
+                </div>
+                <div class="message-item d-flex flex-row flex-between align-center">
+                    <figure data-wow-delay=".2s" class="message-item_img wow fadeInUp">
+                        <img src="assets/img/common/message_img.png" alt="">
+                    </figure>
+                    <div data-wow-delay=".4s" class="message-item_area wow fadeInUp">
+                        <p class="message-item_txt">皆さま、こんにちは。代表の藤川です。<br>弊社は2019年の創業以来、ベビー用品の展開に取り組み、「colulu」 という自社ベビーブランドを立ち上げました。<br>「社会に貢献し、社員の幸せを追求する」という企業理念のもと、スタッフとともに日々成長しながら、より多くのご家庭に安心して使える高品質な商品をお届けできるよう、事業を拡大しております。<br>私の座右の銘は 「変化と挑戦」 です。<br>人は本能的に変化を避け、現状を維持しようとするものです。<br>しかし、テクノロジーの進化は目覚ましく、数年前の常識が今では通用しない時代になっています。<br>現在の事業が順調であっても、現状維持にとどまれば、やがて衰退してしまうでしょう。<br>だからこそ、私たちは
+                            変化を恐れず、常に挑戦し続ける ことを大切にしています。<br>これからも時代の変化を柔軟に捉え、新たな価値を創造しながら、さらなる事業の発展を目指してまいります。<br>今後ともご支援のほど、よろしくお願いいたします。</p>
+                        <div class="message-item_bottom d-flex flex-end">
+                            <div class="message-item_detail">
+                                <p class="message-item_company">株式会社orivance</p>
+                                <p class="message-item_info d-flex flex-row align-center">
+                                    <span class="message-item_pos">代表取締役</span>
+                                    <span class="message-item_name">藤川翔太</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="company">
+            <div class="c-inner">
+                <div data-wow-delay=".2s" class="company_ttl wow fadeInUp">
+                    <p class="c-mark_ttl"><span>会社概要</span></p>
+                </div>
+                <div data-wow-delay=".2s" class="company-item wow fadeInUp">
+                    <div class="company-item_row d-flex flex-row">
+                        <p class="company-item_category">社名</p>
+                        <p class="company-item_txt">株式会社orivance</p>
+                    </div>
+                    <div class="company-item_row d-flex flex-row">
+                        <p class="company-item_category">代表者</p>
+                        <p class="company-item_txt">藤川翔太</p>
+                    </div>
+                    <div class="company-item_row d-flex flex-row">
+                        <p class="company-item_category">設立</p>
+                        <p class="company-item_txt">2019年5月30日</p>
+                    </div>
+                    <div class="company-item_row d-flex flex-row">
+                        <p class="company-item_category">所在地</p>
+                        <p class="company-item_txt">〒472-0043<br>愛知県知立市東栄3丁目48番地</p>
+                    </div>
+                    <div class="company-item_row d-flex flex-row">
+                        <p class="company-item_category">TEL</p>
+                        <p class="company-item_txt">0566-68-9479</p>
+                    </div>
+                    <div class="company-item_row d-flex flex-row">
+                        <p class="company-item_category">事業内容</p>
+                        <p class="company-item_txt">・ベビー用品の企画・開発・販売<br>・小売業<br>・卸売業</p>
+                    </div>
+                    <div class="company-item_row d-flex flex-row">
+                        <p class="company-item_category">従業員数</p>
+                        <p class="company-item_txt">15名</p>
+                    </div>
+                    <div class="company-item_row d-flex flex-row">
+                        <p class="company-item_category">資本金</p>
+                        <p class="company-item_txt">300万円</p>
+                    </div>
+                    <div class="company-item_row d-flex flex-row">
+                        <p class="company-item_category">取引銀行</p>
+                        <p class="company-item_txt">・りそな銀行<br>・名古屋銀行<br>・碧海信用金庫<br>・愛知銀行</p>
+                    </div>
+                    <div class="company-item_row d-flex flex-row">
+                        <p class="company-item_category">お取引き企業様</p>
+                        <p class="company-item_txt">・株式会社Poled<br>・アプライド株式会社<br>・株式会社ウィルエー<br>・雲云テクノロジー株式会社<br>・キャノンマーケティングジャパン株式会社<br>・株式会社グリーンハウス<br>・株式会社ジャナ・ジャパン<br>・日本エイテックス株式会社<br>・株式会社バイオビューティ―<br>・メテオAPAC株式会社<br>（五十音順）</p>
+                    </div>
+                    <div class="company-item_row d-flex flex-row">
+                        <p class="company-item_category">顧問</p>
+                        <p class="company-item_txt">税理士法人　池上会計<br>弁護士法人　森・濱田松本法律事務所</p>
+                    </div>
+                </div>
+            </div>
+            <div data-wow-delay=".2s" class="company-bottom d-flex flex-row align-center wow fadeInUp">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6536.305836636302!2d137.051072!3d35.002877!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60049c1887bb1cb7%3A0x5e21cfe899777b5!2z44CSNDcyLTAwNDMg5oSb55-l55yM55-l56uL5biC5p2x5qCE77yT5LiB55uu77yU77yY!5e0!3m2!1sja!2sjp!4v1750854588203!5m2!1sja!2sjp"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p class="company-bottom_address">〒472-0043<br>愛知県知立市東栄3丁目48番地</p>
+            </div>
+        </div>
+    </main>
+
+    <div data-wow-delay=".2s" class="bottom-social d-flex flex-row align-center flex-center wow fadeInUp">
+        <a href="#" class="bottom-social_link d-flex">
+            <img src="assets/img/common/icon_insta.png" alt="">
+        </a>
+        <a href="#" class="bottom-social_link d-flex">
+            <img src="assets/img/common/icon_x.png" alt="">
+        </a>
+        <a href="#" class="bottom-social_link d-flex">
+            <img src="assets/img/common/icon_line.png" alt="">
+        </a>
+        <a href="#" class="bottom-social_link d-flex">
+            <img src="assets/img/common/icon_f.png" alt="">
+        </a>
+    </div>
+
+    <div class="footer">
+        <a href="#" class="footer-scroll">
+            <p class="footer-scroll_en">Top</p>
+            <p class="footer-scroll_action">
+                <span></span>
+            </p>
+        </a>
+        <div class="footer-inner">
+            <div class="footer-item d-flex flex-row flex-between">
+                <div class="footer-company">
+                    <a href="/orivance" class="footer-logo d-flex">
+                        <span class="d-flex"><img src="assets/img/common/ft_logo.png" alt=""></span>
+                    </a>
+                    <p class="footer-company_name">株式会社orivance</p>
+                    <p class="footer-company_address">〒472-0043<br>愛知県知立市東栄3丁目48番地</p>
+                </div>
+                <div class="footer-area d-flex flex-row flex-between">
+                    <ul class="footer-area_menu">
+                        <li>
+                            <a href="/orivance" class="footer-area_link d-flex flex-column align-start">
+                                <span>TOP</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="service.html" class="footer-area_link d-flex flex-column align-start">
+                                <span>SERVICE</span>
+                                <span>事業内容</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="achieve.html" class="footer-area_link d-flex flex-column align-start">
+                                <span>PROJECTS</span>
+                                <span>事例と実績</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="footer-area_link d-flex flex-column align-start">
+                                <span>ABOUT</span>
+                                <span>会社概要</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="recruit.html" class="footer-area_link d-flex flex-column align-start">
+                                <span>RECRUIT</span>
+                                <span>採用情報</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="c-btn_msg d-flex flex-row flex-center align-center">
+                        <div class="c-btn_icon d-flex">
+                            <img src="assets/img/common/icon_msg_white.png" alt="">
+                        </div>
+                        <div class="c-btn_contact">
+                            <p class="c-btn_en">CONTACT</p>
+                            <p class="c-btn_jp">お問い合わせ</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom d-flex flex-row align-center flex-between">
+                <a href="privacy.html" class="footer-bottom_link">プライバシーポリシー</a>
+                <p class="footer-bottom_copy">Copyright © 株式会社orivance</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/common.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+.u-sp-block {
+    display: none;
+}
+
+.u-pc-block {
+    display: block;
+}
+
+.u-mt-20 {
+    margin-top: 20px !important;
+}
+
+.u-mt-30 {
+    margin-top: 30px;
+}
+
+@media(max-width:768px) {
+    .u-sp-block {
+        display: block;
+    }
+    .u-pc-block {
+        display: none;
+    }
+}

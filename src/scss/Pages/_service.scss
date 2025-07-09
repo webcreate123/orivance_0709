@@ -1,0 +1,301 @@
+#service {
+    background-color: #f0f4f7;
+    padding: 200px 0 145px;
+    .reset {
+        .c-btn {
+            border-bottom: 1px solid #004178;
+            span {
+                &:last-child {
+                    background-color: #e1e9f0;
+                }
+            }
+            &:hover {
+                span {
+                    &:last-child {
+                        background-color: #004178;
+                    }
+                }
+            }
+        }
+    }
+    .marketing {
+        margin-top: 300px;
+        .item {
+            margin-top: 45px;
+            padding: 85px 85px 65px;
+            background-color: white;
+            &_txt {
+                font-size: 20px;
+                line-height: calc(35 / 20);
+            }
+            &_btn {
+                margin-top: 70px;
+            }
+        }
+    }
+    .origin {
+        margin-top: 220px;
+        .c-service {
+            &_img {
+                top: -20px;
+                right: -42px;
+            }
+        }
+        .item {
+            margin-top: 100px;
+            background-color: white;
+            padding: 85px;
+            font-family: "Zen Kaku Gothic New", sans-serif;
+            &_ttl {
+                font-size: 30px;
+            }
+            &_txt {
+                font-size: 20px;
+                line-height: calc(35 / 20);
+                margin-top: 10px;
+            }
+            &_btn {
+                margin-top: 65px;
+            }
+        }
+        .category {
+            .box {
+                margin-top: 30px;
+                &_img {
+                    box-shadow: 0 0 15px #e1e9f0;
+                    border-radius: 20px;
+                    max-width: 261px;
+                    img {
+                        border-radius: 20px;
+                    }
+                }
+                &_ttl {
+                    padding: 15px 10px 0;
+                    line-height: calc(24 / 16);
+                }
+            }
+        }
+    }
+    .online {
+        margin-top: 100px;
+        .c-service {
+            &_img {
+                top: 120px;
+                right: -70px;
+            }
+        }
+        .item {
+            background-color: white;
+            padding: 85px;
+            margin-top: 75px;
+            &_txt {
+                font-size: 20px;
+                line-height: calc(35 / 20);
+            }
+        }
+        .relation {
+            &_ttl {
+                margin-top: 55px;
+                span {
+                    position: relative;
+                    font-size: 24px;
+                    color: #002c52;
+                    font-weight: 500;
+                    padding-left: 60px;
+                    &::before {
+                        content: "";
+                        width: 40px;
+                        height: 1px;
+                        background-color: #002748;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                    }
+                }
+            }
+            &_lead {
+                background-color: #f5f7f9;
+                margin-top: 15px;
+                padding: 45px 0;
+                .c-btn {
+                    width: 300px;
+                    justify-content: center;
+                    position: relative;
+                    span {
+                        &:first-child {
+                            font-size: 24px;
+                            font-weight: 500;
+                            margin-right: unset;
+                        }
+                        &:last-child {
+                            position: absolute;
+                            right: 0;
+                            top: calc(50% - 11.5px);
+                        }
+                    }
+                }
+            }
+            &_box {
+                background-color: #f5f7f9;
+                margin-top: 15px;
+                padding: 45px 0;
+                width: 32%;
+                .c-btn {
+                    width: 300px;
+                    justify-content: center;
+                    position: relative;
+                    span {
+                        &:first-child {
+                            font-size: 24px;
+                            font-weight: 500;
+                            margin-right: unset;
+                        }
+                        &:last-child {
+                            position: absolute;
+                            right: 0;
+                            top: calc(50% - 11.5px);
+                        }
+                    }
+                }
+            }
+        }
+        .banner {
+            margin: 55px 50px 0;
+        }
+    }
+}
+
+@media(max-width: 1440px) {
+    #service {
+        .marketing {
+            .item {
+                margin-top: 45rem;
+                padding: 85rem 85rem 65rem;
+            }
+            .c-service {
+                &_img {
+                    img {
+                        width: 600rem;
+                    }
+                }
+            }
+        }
+        .origin {
+            .c-service {
+                &_img {
+                    img {
+                        width: 693rem;
+                    }
+                }
+            }
+        }
+        .online {
+            .banner {
+                &_img {
+                    width: 49%;
+                }
+            }
+            .c-service {
+                &_img {
+                    img {
+                        width: 650rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    #service {
+        .online {
+            .relation {
+                &_box {
+                    .c-btn {
+                        span {
+                            &:first-child {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    #service {
+        padding: 100px 0 80px;
+        .marketing {
+            margin-top: 80px;
+            .item {
+                padding: 30px 20px;
+                &_txt {
+                    font-size: 16px;
+                }
+                &_btn {
+                    margin-top: 40px;
+                }
+            }
+        }
+        .origin {
+            margin-top: 80px;
+            .c-service_img {
+                top: unset;
+                right: unset;
+            }
+            .item {
+                margin-top: 40px;
+                padding: 30px 20px;
+                &_ttl {
+                    font-size: 24px;
+                }
+                &_txt {
+                    font-size: 16px;
+                }
+            }
+            .category {
+                .box {
+                    width: 49%;
+                    &_ttl {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .online {
+            .c-service {
+                &_img {
+                    top: unset;
+                    right: unset;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .item {
+                margin-top: 40px;
+                padding: 30px 20px;
+            }
+            .relation {
+                &_other {
+                    flex-direction: column;
+                }
+                &_box {
+                    width: 100%;
+                }
+            }
+            .banner {
+                margin: 30px 0 0;
+                flex-direction: column;
+                &_img {
+                    width: 100%;
+                    &:first-child {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

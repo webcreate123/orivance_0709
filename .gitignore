@@ -1,0 +1,62 @@
+# Assets folder (contains images, etc.)
+assets/img/
+
+# Environment files
+.env
+.env.local
+.env.production
+.env_pro
+
+# Composer dependencies
+vendor/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Cache files
+cache/
+*.cache
+
+# Backup files
+*.bak
+*.backup
+
+# Configuration files with sensitive data
+config/database.php
+config/smtp_credentials.php
+
+# Uploaded files
+uploads/
+
+# Node modules (if using any frontend build tools)
+node_modules/
+
+# Build directories
+dist/
+build/
+
+# PHP specific
+*.php~
+.phpunit.result.cache 

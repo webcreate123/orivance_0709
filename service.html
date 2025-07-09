@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <title></title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/img/favicon.ico">
+
+    <!-- Google Tag Manager -->
+
+    <!-- End Google Tag Manager -->
+
+    <!-- OGP -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="./img/ogimage.jpg" />
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--  FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!--  FONT  -->
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'hcq6ong',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body>
+
+    <div class="menu-overlay">
+        <div class="overlay-links">
+            <div class="overlay-links__group">
+                <a href="/orivance" class="overlay-links__lead d-flex flex-column align-center flex-center">
+                    <span>TOP</span>
+                </a>
+                <a href="service.html" class="overlay-links__lead d-flex flex-column align-center flex-center">
+                    <span>SERVICE</span>
+                    <span>事業内容</span>
+                </a>
+                <a href="achieve.html" class="overlay-links__lead d-flex flex-column align-center flex-center">
+                    <span>PROJECTS</span>
+                    <span>事例と実績</span>
+                </a>
+                <a href="about.html" class="overlay-links__lead d-flex flex-column align-center flex-center">
+                    <span>ABOUT</span>
+                    <span>会社概要</span>
+                </a>
+                <a href="recruit.html" class="overlay-links__lead d-flex flex-column align-center flex-center">
+                    <span>RECRUIT</span>
+                    <span>会社概要</span>
+                </a>
+            </div>
+            <div class="overlay-links_contact d-flex flex-center">
+                <a href="contact.html" class="c-btn_msg d-flex flex-row flex-center align-center">
+                    <div class="c-btn_icon d-flex">
+                        <img src="assets/img/common/icon_msg_white.png" alt="">
+                    </div>
+                    <div class="c-btn_contact">
+                        <p class="c-btn_en">CONTACT</p>
+                        <p class="c-btn_jp">お問い合わせ</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header d-flex flex-row align-center flex-between">
+        <a href="/orivance" class="header-logo">
+            <span class="d-flex"><img src="assets/img/common/hd_logo.png" alt=""></span>
+        </a>
+        <div class="header-item d-flex flex-row align-center">
+            <a href="service.html" class="header-item__link">
+                <p class="header-item__en">SERVICE</p>
+                <p class="header-item__jp">事業内容</p>
+            </a>
+            <a href="achieve.html" class="header-item__link">
+                <p class="header-item__en">PROJECTS</p>
+                <p class="header-item__jp">事例と実績</p>
+            </a>
+            <a href="about.html" class="header-item__link">
+                <p class="header-item__en">ABOUT</p>
+                <p class="header-item__jp">会社概要</p>
+            </a>
+            <a href="recruit.html" class="header-item__link">
+                <p class="header-item__en">RECRUIT</p>
+                <p class="header-item__jp">採用情報</p>
+            </a>
+            <a href="contact.html" class="c-btn_msg d-flex flex-row flex-center align-center">
+                <div class="c-btn_icon d-flex">
+                    <img src="assets/img/common/icon_msg_white.png" alt="">
+                </div>
+                <div class="c-btn_contact">
+                    <p class="c-btn_en">CONTACT</p>
+                    <p class="c-btn_jp">お問い合わせ</p>
+                </div>
+            </a>
+        </div>
+        <div class="sp-menu">
+            <div class="sp-menu-item">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <main id="service">
+        <div class="c-sub_fv d-flex flex-center">
+            <div data-wow-delay=".2s" class="c-sub_ttl wow fadeInUp">
+                <p class="c-sub_en"><span>SERVICE</span></p>
+                <h3 class="c-sub_jp">事業内容</h3>
+            </div>
+        </div>
+        <div class="c-inner">
+            <div class="marketing">
+                <div data-wow-delay=".2s" class="c-service_lead wow fadeInUp">
+                    <div class="c-service_ttl">
+                        <p class="c-service_en"><span>Marketing</span></p>
+                        <p class="c-service_jp"><span>マーケティング事業</span></p>
+                    </div>
+                    <figure class="c-service_img">
+                        <img src="assets/img/service/marketing_img.png" alt="">
+                    </figure>
+                </div>
+                <div data-wow-delay=".2s" class="item wow fadeInUp">
+                    <p class="item_txt">当社は、XやInstagramをはじめとするソーシャルメディアを活用し、ブランドや商品の認知度向上、顧客とのエンゲージメント強化、売上促進を支援するSNSマーケティング事業を展開しています。<br><br>特に、インフルエンサーマーケティングに強みを持ち、500名以上のインフルエンサーとのネットワークを活かした戦略的なプロモーションを提供しています。これにより、ターゲット層に最適なインフルエンサーを選定し、効果的かつ高い費用対効果を実現するマーケティング施策を実施します。<br><br>また、当社が取り扱うベビーグッズは、SNSとの親和性が高く、消費者の関心を集めやすい商材です。この特性を活かし、ターゲットに響くプロモーションを企画・運用し、多くの企業様のブランド価値向上と売上拡大に貢献しています。<br><br>SNSを活用した効果的なマーケティングをご検討の企業様は、ぜひ当社にご相談ください。</p>
+                    <div class="item_btn d-flex flex-end reset">
+                        <a href="achieve.html" class="c-btn">
+                            <span>事例を見る</span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="origin">
+                <div data-wow-delay=".2s" class="c-service_lead wow fadeInUp">
+                    <div class="c-service_ttl">
+                        <p class="c-service_en"><span>Original Bland</span></p>
+                        <p class="c-service_jp"><span>自社製品販売</span></p>
+                    </div>
+                    <figure class="c-service_img">
+                        <img src="assets/img/service/original.png" alt="">
+                    </figure>
+                </div>
+                <div data-wow-delay=".2s" class="item wow fadeInUp">
+                    <p class="item_ttl">「かわいい、相棒。」</p>
+                    <p class="item_txt">子供が産まれることによって、色々な場面で、多様なつながりが生まれ、かけがえのない絆も生まれます。<br>Coluluは、赤ちゃんの、あなたの、頼れる相棒として、応援するブランドです。</p>
+                </div>
+                <div class="category d-flex flex-wrap flex-between">
+                    <div data-wow-delay=".2s" class="box wow fadeInUp">
+                        <figure class="box_img">
+                            <img src="assets/img/service/original_img1.png" alt="">
+                        </figure>
+                    </div>
+                    <div data-wow-delay=".2s" class="box wow fadeInUp">
+                        <figure class="box_img">
+                            <img src="assets/img/service/original_img2.jpg" alt="">
+                        </figure>
+                        <p class="box_ttl">Colulu ドリマグベビー<br>カードリンクホルダー</p>
+                    </div>
+                    <div data-wow-delay=".2s" class="box wow fadeInUp">
+                        <figure class="box_img">
+                            <img src="assets/img/service/original_img3.jpg" alt="">
+                        </figure>
+                        <p class="box_ttl">Colulu ベビーカーシート<br>オールシーズン用</p>
+                    </div>
+                    <div data-wow-delay=".2s" class="box wow fadeInUp">
+                        <figure class="box_img">
+                            <img src="assets/img/service/original_img4.jpg" alt="">
+                        </figure>
+                        <p class="box_ttl">Colulu マザーズバッグ<br>大容量＋軽量リュック</p>
+                    </div>
+                    <div data-wow-delay=".2s" class="box wow fadeInUp">
+                        <figure class="box_img">
+                            <img src="assets/img/service/original_img5.png" alt="">
+                        </figure>
+                        <p class="box_ttl">Colulu ベビーカー扇風機</p>
+                    </div>
+                    <div data-wow-delay=".2s" class="box wow fadeInUp">
+                        <figure class="box_img">
+                            <img src="assets/img/service/original_img6.jpg" alt="">
+                        </figure>
+                        <p class="box_ttl">おしりふきケース一体型<br>おむつポーチ</p>
+                    </div>
+                    <div data-wow-delay=".2s" class="box wow fadeInUp">
+                        <figure class="box_img">
+                            <img src="assets/img/service/original_img7.png" alt="">
+                        </figure>
+                        <p class="box_ttl">Colulu ベビーヘルメット</p>
+                    </div>
+                    <div data-wow-delay=".2s" class="box wow fadeInUp">
+                        <figure class="box_img">
+                            <img src="assets/img/service/original_img8.jpg" alt="">
+                        </figure>
+                        <p class="box_ttl">ハグウォーマー<br>抱っこ紐 ケープ</p>
+                    </div>
+                </div>
+                <div data-wow-delay=".2s" class="item_btn d-flex flex-end reset wow fadeInUp">
+                    <a href="https://colulu.jp/" target="_blank" class="c-btn">
+                        <span>Colulu公式サイト</span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <div class="online">
+                <div data-wow-delay=".2s" class="c-service_lead wow fadeInUp">
+                    <div class="c-service_ttl">
+                        <p class="c-service_en"><span>Online Store<br>Business</span></p>
+                        <p class="c-service_jp"><span>EC事業</span></p>
+                    </div>
+                    <figure class="c-service_img">
+                        <img src="assets/img/service/online_img.png" alt="">
+                    </figure>
+                </div>
+                <div data-wow-delay=".2s" class="item wow fadeInUp">
+                    <p class="item_txt">ベビー用品を中心に、美容品や生活雑貨、IoT家電など、幅広いアイテムを取り揃えて販売しています。<br>実物を手に取れないネット販売だからこそ、お客様のレビューやご意見を大切にし、分かりやすい商品ページ作りを通して、商品の魅力を最大限にお伝えできるように努めています。</p>
+                </div>
+                <div class="relation">
+                    <p data-wow-delay=".2s" class="relation_ttl wow fadeInUp"><span>運営ECサイト</span></p>
+                    <div data-wow-delay=".2s" class="relation_lead d-flex flex-center wow fadeInUp">
+                        <a href="https://colulu.jp/" target="_blank" class="c-btn">
+                            <span>Colulu</span>
+                            <span></span>
+                        </a>
+                    </div>
+                    <div data-wow-delay=".2s" class="relation_other d-flex flex-wrap flex-between wow fadeInUp">
+                        <div class="relation_box d-flex flex-center">
+                            <a href="#" class="c-btn">
+                                <span>楽天市場</span>
+                                <span></span>
+                            </a>
+                        </div>
+                        <div class="relation_box d-flex flex-center">
+                            <a href="#" class="c-btn">
+                                <span>Amazon </span>
+                                <span></span>
+                            </a>
+                        </div>
+                        <div class="relation_box d-flex flex-center">
+                            <a href="#" class="c-btn">
+                                <span>Yahoo!ショッピング</span>
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div data-wow-delay=".2s" class="banner d-flex flex-row flex-center flex-between wow fadeInUp">
+                    <figure class="banner_img">
+                        <img src="assets/img/service/ec_img1.jpg" alt="">
+                    </figure>
+                    <figure class="banner_img">
+                        <img src="assets/img/service/ec_img2.jpg" alt="">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div data-wow-delay=".2s" class="bottom-social d-flex flex-row align-center flex-center wow fadeInUp">
+        <a href="#" class="bottom-social_link d-flex">
+            <img src="assets/img/common/icon_insta.png" alt="">
+        </a>
+        <a href="#" class="bottom-social_link d-flex">
+            <img src="assets/img/common/icon_x.png" alt="">
+        </a>
+        <a href="#" class="bottom-social_link d-flex">
+            <img src="assets/img/common/icon_line.png" alt="">
+        </a>
+        <a href="#" class="bottom-social_link d-flex">
+            <img src="assets/img/common/icon_f.png" alt="">
+        </a>
+    </div>
+
+    <div class="footer">
+        <a href="#" class="footer-scroll">
+            <p class="footer-scroll_en">Top</p>
+            <p class="footer-scroll_action">
+                <span></span>
+            </p>
+        </a>
+        <div class="footer-inner">
+            <div class="footer-item d-flex flex-row flex-between">
+                <div class="footer-company">
+                    <a href="/orivance" class="footer-logo d-flex">
+                        <span class="d-flex"><img src="assets/img/common/ft_logo.png" alt=""></span>
+                    </a>
+                    <p class="footer-company_name">株式会社orivance</p>
+                    <p class="footer-company_address">〒472-0043<br>愛知県知立市東栄3丁目48番地</p>
+                </div>
+                <div class="footer-area d-flex flex-row flex-between">
+                    <ul class="footer-area_menu">
+                        <li>
+                            <a href="/orivance" class="footer-area_link d-flex flex-column align-start">
+                                <span>TOP</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="service.html" class="footer-area_link d-flex flex-column align-start">
+                                <span>SERVICE</span>
+                                <span>事業内容</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="achieve.html" class="footer-area_link d-flex flex-column align-start">
+                                <span>PROJECTS</span>
+                                <span>事例と実績</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="footer-area_link d-flex flex-column align-start">
+                                <span>ABOUT</span>
+                                <span>会社概要</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="recruit.html" class="footer-area_link d-flex flex-column align-start">
+                                <span>RECRUIT</span>
+                                <span>採用情報</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="c-btn_msg d-flex flex-row flex-center align-center">
+                        <div class="c-btn_icon d-flex">
+                            <img src="assets/img/common/icon_msg_white.png" alt="">
+                        </div>
+                        <div class="c-btn_contact">
+                            <p class="c-btn_en">CONTACT</p>
+                            <p class="c-btn_jp">お問い合わせ</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom d-flex flex-row align-center flex-between">
+                <a href="privacy.html" class="footer-bottom_link">プライバシーポリシー</a>
+                <p class="footer-bottom_copy">Copyright © 株式会社orivance</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/common.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

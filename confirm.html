@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <title></title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="assets/img/favicon.ico">
+
+    <!-- Google Tag Manager -->
+
+    <!-- End Google Tag Manager -->
+
+    <!-- OGP -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="./img/ogimage.jpg" />
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--  FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans+JP:wght@100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!--  FONT  -->
+    <script>
+        (function(d) {
+            var config = {
+                    kitId: 'hcq6ong',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h = d.documentElement,
+                t = setTimeout(function() {
+                    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+                }, config.scriptTimeout),
+                tk = d.createElement("script"),
+                f = false,
+                s = d.getElementsByTagName("script")[0],
+                a;
+            h.className += " wf-loading";
+            tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+            tk.async = true;
+            tk.onload = tk.onreadystatechange = function() {
+                a = this.readyState;
+                if (f || a && a != "complete" && a != "loaded") return;
+                f = true;
+                clearTimeout(t);
+                try {
+                    Typekit.load(config)
+                } catch (e) {}
+            };
+            s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body>
+
+    <div class="menu-overlay">
+        <div class="overlay-links">
+            <div class="overlay-links__group">
+                <a href="/orivance" class="overlay-links__lead d-flex flex-column align-center flex-center">
+                    <span>TOP</span>
+                </a>
+                <a href="service.html" class="overlay-links__lead d-flex flex-column align-center flex-center">
+                    <span>SERVICE</span>
+                    <span>事業内容</span>
+                </a>
+                <a href="achieve.html" class="overlay-links__lead d-flex flex-column align-center flex-center">
+                    <span>PROJECTS</span>
+                    <span>事例と実績</span>
+                </a>
+                <a href="about.html" class="overlay-links__lead d-flex flex-column align-center flex-center">
+                    <span>ABOUT</span>
+                    <span>会社概要</span>
+                </a>
+                <a href="recruit.html" class="overlay-links__lead d-flex flex-column align-center flex-center">
+                    <span>RECRUIT</span>
+                    <span>会社概要</span>
+                </a>
+            </div>
+            <div class="overlay-links_contact d-flex flex-center">
+                <a href="contact.html" class="c-btn_msg d-flex flex-row flex-center align-center">
+                    <div class="c-btn_icon d-flex">
+                        <img src="assets/img/common/icon_msg_white.png" alt="">
+                    </div>
+                    <div class="c-btn_contact">
+                        <p class="c-btn_en">CONTACT</p>
+                        <p class="c-btn_jp">お問い合わせ</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="header d-flex flex-row align-center flex-between">
+        <a href="/orivance" class="header-logo">
+            <span class="d-flex"><img src="assets/img/common/hd_logo.png" alt=""></span>
+        </a>
+        <div class="header-item d-flex flex-row align-center">
+            <a href="service.html" class="header-item__link">
+                <p class="header-item__en">SERVICE</p>
+                <p class="header-item__jp">事業内容</p>
+            </a>
+            <a href="achieve.html" class="header-item__link">
+                <p class="header-item__en">PROJECTS</p>
+                <p class="header-item__jp">事例と実績</p>
+            </a>
+            <a href="about.html" class="header-item__link">
+                <p class="header-item__en">ABOUT</p>
+                <p class="header-item__jp">会社概要</p>
+            </a>
+            <a href="recruit.html" class="header-item__link">
+                <p class="header-item__en">RECRUIT</p>
+                <p class="header-item__jp">採用情報</p>
+            </a>
+            <a href="contact.html" class="c-btn_msg d-flex flex-row flex-center align-center">
+                <div class="c-btn_icon d-flex">
+                    <img src="assets/img/common/icon_msg_white.png" alt="">
+                </div>
+                <div class="c-btn_contact">
+                    <p class="c-btn_en">CONTACT</p>
+                    <p class="c-btn_jp">お問い合わせ</p>
+                </div>
+            </a>
+        </div>
+        <div class="sp-menu">
+            <div class="sp-menu-item">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <main id="contact">
+        <div class="confirm">
+            <div class="confirm-inner">
+                <p data-wow-delay=".2s" class="confirm_ttl wow fadeInUp">以下の内容で送信してよろしいですか？</p>
+                <div data-wow-delay=".2s" class="confirm-item wow fadeInUp">
+                    <div class="confirm-item_row d-flex flex-row">
+                        <p class="confirm-item_category">お名前</p>
+                        <p class="confirm-item_txt">〇〇　〇〇</p>
+                    </div>
+                    <div class="confirm-item_row d-flex flex-row">
+                        <p class="confirm-item_category">会社名</p>
+                        <p class="confirm-item_txt">〇〇〇〇会社</p>
+                    </div>
+                    <div class="confirm-item_row d-flex flex-row">
+                        <p class="confirm-item_category">TEL</p>
+                        <p class="confirm-item_txt">00-0000-0000</p>
+                    </div>
+                    <div class="confirm-item_row d-flex flex-row">
+                        <p class="confirm-item_category">E -MAIL</p>
+                        <p class="confirm-item_txt">**********＠***********.com</p>
+                    </div>
+                    <div class="confirm-item_row d-flex flex-row">
+                        <p class="confirm-item_category">お問い合わせ<br>カテゴリー</p>
+                        <p class="confirm-item_txt">求人エントリー</p>
+                    </div>
+                    <div class="confirm-item_row reset d-flex flex-row">
+                        <p class="confirm-item_category">お問い合わせ</p>
+                        <p class="confirm-item_txt">あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+                    </div>
+                    <div class="confirm-item_btn d-flex flex-row align-center flex-between">
+                        <div class="confirm-item_submit">
+                            <button class="confirm-item_post">
+                                <span>送信する</span>
+                            </button>
+                        </div>
+                        <div class="confirm-item_back">
+                            <a href="contact.html" class="c-btn">
+                                <span>戻る</span>
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer">
+        <div class="footer-inner">
+            <div class="footer-item d-flex flex-row flex-between">
+                <div class="footer-company">
+                    <a href="/orivance" class="footer-logo d-flex">
+                        <span class="d-flex"><img src="assets/img/common/ft_logo.png" alt=""></span>
+                    </a>
+                    <p class="footer-company_name">株式会社orivance</p>
+                    <p class="footer-company_address">〒472-0043<br>愛知県知立市東栄3丁目48番地</p>
+                </div>
+                <div class="footer-area d-flex flex-row flex-between">
+                    <ul class="footer-area_menu">
+                        <li>
+                            <a href="/orivance" class="footer-area_link d-flex flex-column align-start">
+                                <span>TOP</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="service.html" class="footer-area_link d-flex flex-column align-start">
+                                <span>SERVICE</span>
+                                <span>事業内容</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="achieve.html" class="footer-area_link d-flex flex-column align-start">
+                                <span>PROJECTS</span>
+                                <span>事例と実績</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="footer-area_link d-flex flex-column align-start">
+                                <span>ABOUT</span>
+                                <span>会社概要</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="recruit.html" class="footer-area_link d-flex flex-column align-start">
+                                <span>RECRUIT</span>
+                                <span>採用情報</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="c-btn_msg d-flex flex-row flex-center align-center">
+                        <div class="c-btn_icon d-flex">
+                            <img src="assets/img/common/icon_msg_white.png" alt="">
+                        </div>
+                        <div class="c-btn_contact">
+                            <p class="c-btn_en">CONTACT</p>
+                            <p class="c-btn_jp">お問い合わせ</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom d-flex flex-row align-center flex-between">
+                <a href="privacy.html" class="footer-bottom_link">プライバシーポリシー</a>
+                <p class="footer-bottom_copy">Copyright © 株式会社orivance</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/common.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

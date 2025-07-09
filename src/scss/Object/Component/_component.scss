@@ -1,0 +1,539 @@
+.header {
+    padding: 15px 30px 15px 40px;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    &-item {
+        &__link {
+            color: #333333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 50px;
+        }
+        &__en {
+            font-family: "Zen Kaku Gothic New", sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+        }
+        &__jp {
+            color: #333333;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+    }
+}
+
+.c-btn {
+    &_msg {
+        width: 210px;
+        height: 70px;
+        border-radius: 5px;
+        background-color: #002c52;
+        color: white;
+        .c-btn_en {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: "Zen Kaku Gothic New", sans-serif;
+            letter-spacing: 0.1em;
+        }
+        .c-btn_jp {
+            font-size: 12px;
+        }
+    }
+    &_contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 15px;
+        .c-btn_jp {
+            color: white;
+        }
+    }
+}
+
+.c-ttl {
+    color: #004178;
+    &_en {
+        font-size: 60px;
+        font-weight: bold;
+        font-family: "Zen Kaku Gothic New", sans-serif;
+        letter-spacing: 0.1em;
+    }
+    &_jp {
+        padding-left: 70px;
+        font-size: 20px;
+        font-weight: 500;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 40px;
+            height: 1px;
+            background-color: #002748;
+        }
+    }
+}
+
+.c-mark {
+    &_ttl {
+        padding-left: 80px;
+        position: relative;
+        margin-left: 30px;
+        &::before {
+            content: "";
+            width: 40px;
+            height: 1px;
+            background-color: #002748;
+            position: absolute;
+            left: 0;
+            top: 50%;
+        }
+        span {
+            font-size: 36px;
+            font-weight: bold;
+            color: #004178;
+            font-family: "Zen Kaku Gothic New", sans-serif;
+        }
+    }
+}
+
+.c-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    transition: all 0.5s;
+    span {
+        font-size: 20px;
+        font-family: "Zen Kaku Gothic New", sans-serif;
+        color: #004178;
+        font-weight: 500;
+        &:first-child {
+            margin-right: 75px;
+        }
+        &:last-child {
+            display: flex;
+            width: 23px;
+            height: 23px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            position: relative;
+            transition: all 0.5s;
+            &::after {
+                transition: all 0.5s;
+                content: "";
+                border-top: 4px solid transparent;
+                border-bottom: 4px solid transparent;
+                border-right: unset;
+                border-left: 7px solid #002748;
+                position: absolute;
+                top: calc(50% - 3px);
+                right: calc(50% - 4px);
+            }
+        }
+    }
+    &:hover {
+        border-bottom: 1px solid #002748;
+        span {
+            &:last-child {
+                background-color: #002748;
+                &::after {
+                    border-left: 7px solid white;
+                }
+            }
+        }
+    }
+}
+
+.bottom-social {
+    margin-bottom: 75px;
+}
+
+.c-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.c-sub {
+    &_ttl {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &_en {
+        span {
+            font-size: 50px;
+            font-family: "Zen Kaku Gothic New", sans-serif;
+            font-weight: bold;
+            color: #004178;
+            letter-spacing: 0.1em;
+            position: relative;
+            &::before {
+                content: "";
+                width: 83px;
+                height: 3px;
+                background-color: #004178;
+                position: absolute;
+                top: calc(50% - 1.5px);
+                left: -160px;
+            }
+            &::after {
+                content: "";
+                width: 83px;
+                height: 3px;
+                background-color: #004178;
+                position: absolute;
+                top: calc(50% - 1.5px);
+                right: -160px;
+            }
+        }
+    }
+    &_jp {
+        font-size: 20px;
+        font-weight: 500;
+        color: #004178;
+        margin-top: 10px;
+    }
+}
+
+.c-service {
+    &_lead {
+        position: relative;
+        z-index: 1;
+    }
+    &_en {
+        font-size: 120px;
+        font-family: "Courgette", cursive;
+        line-height: 1;
+        letter-spacing: 0;
+        span {
+            padding: 0 15px;
+            color: #001B33;
+            background-image: linear-gradient(90deg, #001B32, #003666, #003666);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &_jp {
+        font-size: 40px;
+        font-weight: bold;
+        font-family: "Zen Kaku Gothic New", sans-serif;
+        color: #004178;
+        margin-top: 20px;
+    }
+    &_img {
+        position: absolute;
+        right: -42px;
+        top: -75px;
+        z-index: -1;
+        img {
+            border-radius: 20px;
+        }
+    }
+}
+
+.footer {
+    background-color: #f0f4f7;
+    padding: 60px 0 40px;
+    position: relative;
+    &-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    &-item {
+        border-bottom: 1px solid #004178;
+        padding-bottom: 45px;
+    }
+    &-company {
+        &_name {
+            font-size: 24px;
+            font-weight: 500;
+            color: #333333;
+            margin: 30px 0 10px;
+        }
+        &_address {
+            font-size: 16px;
+            font-weight: 500;
+            color: #333333;
+        }
+    }
+    &-area {
+        max-width: 500px;
+        width: 100%;
+        margin-right: 40px;
+        margin-top: 20px;
+        &_link {
+            margin-top: 15px;
+            span {
+                &:first-child {
+                    color: #333333;
+                    letter-spacing: 0.1em;
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-family: "Zen Kaku Gothic New", sans-serif;
+                }
+                &:nth-child(2) {
+                    font-size: 12px;
+                    color: #333333;
+                }
+            }
+        }
+        .c-btn_msg {
+            margin-top: 50px;
+        }
+    }
+    &-bottom {
+        margin: 35px 33px 0;
+        &_link {
+            color: #333333;
+        }
+        &_copy {
+            font-size: 14px;
+            color: #333333;
+        }
+    }
+    &-scroll {
+        position: absolute;
+        top: -180px;
+        right: 100px;
+        width: 156px;
+        height: 156px;
+        border-radius: 50%;
+        border: 1px solid #002c5257;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &_en {
+            color: #002c5257;
+            font-weight: 500;
+            writing-mode: sideways-lr;
+            padding-right: 10px;
+            position: relative;
+        }
+        &_action {
+            height: 89px;
+            width: 1px;
+            position: relative;
+            span {
+                // animation: move03 1.6s ease-in-out infinite;
+                height: 100%;
+                width: 1px;
+                background-color: #002c5257;
+                display: flex;
+                transform: rotate(180deg);
+            }
+            &::before {
+                content: "";
+                width: 10px;
+                height: 1px;
+                background-color: #002c5257;
+                position: absolute;
+                // bottom: 2px;
+                top: 2px;
+                right: -8px;
+                transform: rotate(45deg);
+                // animation: move04 1.6s ease-in-out infinite;
+            }
+        }
+    }
+}
+
+@media(max-width: 1440px) {
+    .c-ttl {
+        &_en {
+            font-size: 60rem;
+        }
+    }
+    .c-btn {
+        span {
+            font-size: 20rem;
+            &:first-child {
+                margin-right: 75rem;
+            }
+        }
+    }
+    .c-service {
+        &_en {
+            font-size: 120rem;
+        }
+        &_jp {
+            font-size: 40rem;
+        }
+    }
+    .c-sub {
+        &_en {
+            span {
+                font-size: 50rem;
+            }
+        }
+    }
+    .c-mark {
+        &_ttl {
+            span {
+                font-size: 36rem;
+            }
+        }
+    }
+    .footer {
+        &-area {
+            max-width: 500rem;
+            margin-right: 40rem;
+        }
+        &-scroll {
+            width: 156rem;
+            height: 156rem;
+            top: -180rem;
+            right: 100rem;
+            &_action {
+                height: 89rem;
+            }
+        }
+    }
+}
+
+@media(max-width: 1280px) {
+    .c-inner {
+        width: 88%;
+    }
+    .footer {
+        &-inner {
+            width: 88%;
+        }
+    }
+}
+
+@media(max-width: 1130px) {
+    .header {
+        padding: 15px 20px;
+        &-item {
+            &__link {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1020px) {
+    .header {
+        &-item {
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .c-ttl {
+        &_en {
+            font-size: 30px;
+        }
+        &_jp {
+            font-size: 16px;
+            padding-left: 40px;
+            &::before {
+                width: 25px;
+            }
+        }
+    }
+    .c-sub {
+        &_en {
+            span {
+                font-size: 36px;
+                &::before {
+                    width: 40px;
+                    left: -80px;
+                }
+                &::after {
+                    width: 40px;
+                    right: -80px;
+                }
+            }
+        }
+        &_jp {
+            font-size: 14px;
+        }
+    }
+    .c-mark {
+        &_ttl {
+            margin-left: unset;
+            padding-left: 50px;
+            span {
+                font-size: 24px;
+            }
+            &::before {
+                width: 30px;
+            }
+        }
+    }
+    .c-service {
+        &_en {
+            font-size: 50px;
+        }
+        &_jp {
+            font-size: 24px;
+        }
+        &_img {
+            margin-top: 20px;
+            position: relative;
+            right: unset;
+            top: unset;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .c-btn {
+        span {
+            font-size: 16px;
+            &:first-child {
+                margin-right: 30px;
+            }
+        }
+    }
+    .footer {
+        &-scroll {
+            width: 100px;
+            height: 100px;
+            top: -40px;
+            right: calc(50% - 50px);
+            &_action {
+                height: 60px;
+            }
+        }
+        &-item {
+            flex-direction: column;
+        }
+        &-area {
+            margin-right: unset;
+            max-width: unset;
+            flex-direction: column;
+            .c-btn_msg {
+                margin-top: 40px;
+                width: 100%;
+            }
+        }
+        &-item {
+            padding-bottom: 30px;
+        }
+        &-bottom {
+            flex-direction: column;
+            margin: 30px 0 0;
+            &_link {
+                display: flex;
+                justify-content: flex-start;
+                width: 100%;
+            }
+            &_copy {
+                margin-top: 30px;
+                font-size: 12px;
+            }
+        }
+    }
+}
